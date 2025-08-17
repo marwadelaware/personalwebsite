@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/script.js" defer></script>
+
+    <!-- fedroka font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- sour gummy font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+    <style>
+        
+        body {
+            background-color: rgb(244, 238, 239);
+            background-image: url("images/bg.jpg");
+            cursor: url("images/cursor.png"), auto;
+        }
+
+        a:hover {
+            cursor: url("images/pointer.png"), pointer;
+        }
+
+        .everything {
+            background-color: white;
+            width: 800px;
+            padding: 35px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-sizing: border-box;
+            border: 35px solid transparent;
+            border-image: url("images/frame2.png");
+            border-image-slice: 68 70 68 70;
+            border-image-width: 35px 35px 35px 35px;
+            border-image-repeat: round round;
+            
+        }
+
+        .top {
+            width: 730px;
+            height: auto;
+        }
+        .title {
+            text-align: center;
+            color: rgb(244,184,218);
+            font-family: "Fredoka", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-variation-settings:
+            "wdth" 100;
+
+        }
+        .border, .blinkie {
+            text-align: center;
+            max-width: 25%;
+            margin: auto;
+            display: block;
+        }
+        
+
+        .hello {
+            text-align: left;
+            color: rgb(211, 88, 154);
+        }
+
+        .pfp {
+           float: left;
+           margin-top: 30px;
+           margin: 10px;
+           max-width: 30%;
+           height: auto;
+           transform: rotate(-10deg);
+           border: 35px solid transparent;
+           border-image: url("images/frame2.png");
+           border-image-slice: 68 70 68 70;
+           border-image-width: 35px 35px 35px 35px;
+           border-image-repeat: round round;
+           translate: -25px
+        }
+
+
+        .intro {
+            margin-top: 20px;
+            font-family: "Sour Gummy", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+  
+        }
+
+        #intro-text {
+            translate: 0px 50px
+        }
+
+        .align1 {
+            display: flex;
+        }
+
+        #rikkuma {
+            translate: 72px -37px
+        }
+
+        #rikkuma.a {
+            cursor: default;
+        }
+        #categorized {
+            translate: 75px -52px
+        }
+
+        #categorized1 {
+            translate: 0px -84px
+        }
+
+        #silly {
+            translate: 143px -122px
+        }
+
+        #silly.a {
+            cursor: default;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            translate: -145px 50px
+        }
+        #keychain {
+            width: 200px;
+            height: auto;
+        }
+
+        #shoes {
+            width: 175px;
+            height: auto;
+        }
+
+        #bear {
+            width: 170px;
+            height: auto;
+            margin-left: -10px
+        }
+
+        .button-text {
+            color: rgb(211, 88, 154);
+            display: flex;
+            justify-content: center;
+            gap: 111px;
+        }
+
+        .creative {
+            translate: 5px
+        }
+
+        .media {
+            translate: 15px
+        }
+
+        .bottom {
+            transform: rotate(180deg);
+            width: 730px;
+            height: auto;
+        
+        }
+        
+        
+    </style>
+<body>
+    <div class = everything>
+        <img class = top src = "images/top.jpg">
+        <h1 class = title>welcome to my website ^_^</h1>
+        <img class = border src = "images/border.jpg">
+       <!-- <a href="https://www.youtube.com/watch?v=d0cfQAlD9Qw"><img src="https://i.ibb.co/VYd77qbb/blinkies-Cafe-7s.gif" class = "blinkie" alt="blinkies-Cafe-7s" border="0"></a> -->
+        <div class = intro>
+            <img class = "pfp" src = "images/pink_profile.jpg">
+            <div id = "intro-text">
+                <p class = "hello">i'm marwa, and i have like... so many interests. like so many.</p>
+                <div class = align1>
+                    <a href = ""><img src ="https://64.media.tumblr.com/2bd8693f6674922c7c6ad6dd7a6b6754/ddfd9fed5121627a-ad/s75x75_c1/f4ab9c75f5f1b9ecf233654d4a44d029bff225ee.gifv" id = "rikkuma"></a>
+                    <p class = "hello" id = categorized> they're typically categorized in three</p>
+                </div>
+                <div>
+                    <p class = "hello" id = categorized1> groups: stem, creative, and media. explore the buttons for more !!</p>
+                    <a href = ""><img src ="https://pix.crd.co/assets/images/gallery18/695a56a7_original.gif?v=5184cfc4" id = "silly"></a>
+                </div>
+            </div>
+            <div class = buttons>
+                <a href = "stem.html"><img src = "images/keychain.png" id = keychain></a>
+                <a href = "creative.html"><img src = "images/bear.png" id = bear></a>
+                <a href = "media.html"><img src = "images/shoes.png" id = shoes></a>
+            </div>
+            <div class = button-text>
+                <p>stem</p>
+                <p class = creative>creative</p>
+                <p class = media>media</p>
+            </div>
+        </div>
+         <img class = bottom src = "images/top.jpg">
+         
+         <script>
+            documentGetElementById('rikkuma').removeAttribute('href');
+            documentGetElementById('silly').removeAttribute('href');
+         </script>
+    </div>
+</body>
+</html>
