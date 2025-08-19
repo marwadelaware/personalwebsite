@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/script.js" defer></script>
+
+    <!-- fedroka font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- sour gummy font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+    <style>
+        
+        body {
+            background-color: rgb(244, 238, 239);
+            background-image: url("images/bg.jpg");
+            cursor: url("images/cursor.png"), auto;
+        }
+
+        a:hover {
+            cursor: url("images/pointer.png"), pointer;
+        }
+
+        .everything {
+            background-color: white;
+            width: 800px;
+            padding: 35px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-sizing: border-box;
+            border: 35px solid transparent;
+            border-image: url("images/frame2.png");
+            border-image-slice: 68 70 68 70;
+            border-image-width: 35px 35px 35px 35px;
+            border-image-repeat: round round;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            
+        }
+
+        .top {
+            width: 730px;
+            height: auto;
+        }
+        .title {
+            text-align: center;
+            color: rgb(244,184,218);
+            font-family: "Fredoka", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            font-variation-settings:
+            "wdth" 100;
+
+        }
+        .border {
+            text-align: center;
+            max-width: 25%;
+            margin: auto;
+            display: block;
+        } 
+
+        .math {
+           float: right;
+           margin-top: 30px;
+           margin: 10px;
+           max-width: 40%;
+           height: auto;
+           transform: rotate(10deg);
+           border: 35px solid transparent;
+           border-image: url("images/frame2.png");
+           border-image-slice: 68 70 68 70;
+           border-image-width: 35px 35px 35px 35px;
+           border-image-repeat: round round;
+        }
+
+
+        .stem {
+            margin-top: 20px;
+            font-family: "Sour Gummy", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
+        .stem_yap {
+            color: rgb(211, 88, 154);
+            display: flex;
+            flex-direction: column;
+            translate: 0px 60px
+        }
+
+        .stem_everything {
+            display: flex;
+        }
+
+        #heart {
+            translate: 80px -40px;
+        }
+
+        #easy {
+            translate: 0px -40px;
+        }
+
+        #mel_cry {
+            translate: 254px -78px;
+        }
+
+        #through {
+            translate: 0px -98px;
+        }
+
+        #laugh {
+            translate: 210px -134px;
+        }
+        
+        #learned {
+            translate: 0px -157px;
+        }
+
+        #happy {
+            translate: 37px -195px;
+        }
+
+        #empty_heart {
+            translate: 62px -218px
+
+        }
+        
+    </style>
+<body>
+    <div class = everything>
+        <img class = top src = "images/top.jpg">
+        <h1 class = title>math ^v^</h1>
+        <img class = border src = "images/border.jpg">
+        <div class = "stem_everything">
+            <div class = "stem_yap">
+                <p class = stem>hmm... how should i start? it felt like i was always oriented to math. i've understood it when i first did addition and subtraction that math was fun. i was completely entranced.</p>
+                <a href = ""><img src = "https://pixels.crd.co/assets/images/gallery08/0b0c7dfd.gif?v=29416114" id = "heart"></a>
+                <p class = stem id = "easy">math wasn't always easy though.</p>
+                <a href = ""><img src = "https://pixels.crd.co/assets/images/gallery01/6a5932d6.gif?v=29416114" id = "mel_cry"></a>
+                <p class = stem id ="through">through the 6 years of kumon that i've lowkey put myself through, </p>
+                <a href = ""><img src = "https://pixels.crd.co/assets/images/gallery108/2f28a74d.gif?v=29416114" id = "laugh"></a>
+                <p class = stem id = learned>i've learned that everything is hard before it becomes easy, and by truly overcoming something while loving the process, you learn to love something for real.</p>
+                <a href = ""><img src = "https://pixels.crd.co/assets/images/gallery01/137bf10d.gif?v=29416114" id = "happy"></a>
+                <a href = ""><img src = "https://pixels.crd.co/assets/images/gallery15/9b85a5d4.gif?v=29416114" id ="empty_heart"></a>
+            </div>
+            <img class = math src = "images/math.jpg">
+        </div>
+    </div>
+</body>
+</html>

@@ -16,8 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-    <style>
+        <style>
         
         body {
             background-color: rgb(244, 238, 239);
@@ -47,6 +46,8 @@
             border-image-slice: 68 70 68 70;
             border-image-width: 35px 35px 35px 35px;
             border-image-repeat: round round;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            overflow: visible;
             
         }
 
@@ -65,7 +66,7 @@
             "wdth" 100;
 
         }
-        .border, .blinkie {
+        .border {
             text-align: center;
             max-width: 25%;
             margin: auto;
@@ -90,7 +91,7 @@
            border-image-slice: 68 70 68 70;
            border-image-width: 35px 35px 35px 35px;
            border-image-repeat: round round;
-           translate: -25px
+           translate: -25px;
         }
 
 
@@ -138,7 +139,7 @@
         .buttons {
             display: flex;
             justify-content: center;
-            translate: -145px 50px
+            translate: -150px 50px
         }
         #keychain {
             width: 200px;
@@ -175,11 +176,86 @@
             transform: rotate(180deg);
             width: 730px;
             height: auto;
+            z-index: 1;
+            position: relative;
         
         }
+
+        .dropdown_buttons {
+            display: flex;
+            gap: 60px;
+            justify-content: center;
+
+        }
         
+        .stem_button,
+        .creative_button,
+        .media_button {
+            background-color: rgb(245, 226, 238);
+            color: rgb(211, 88, 154);
+            padding: 13px 16px;
+            border-radius: 16px;
+            border: none;
+            cursor: pointer;
+            font-family: "Sour Gummy", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+            font-size: 16px;
+            box-shadow: 0 4px 0 rgba(225, 124, 183, 0.5)
+        }
+
+        .stem_dropdown,
+        .creative_dropdown,
+        .media_dropdown {
+            position: relative;
+            display: inline-block;
+            z-index: 10;
+        }
+
+        .stem_content,
+        .creative_content,
+        .media_content {
+            display: none;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgb(255, 255, 255);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            padding: 5px 0;
+            text-align: center;
+            border-radius: 25px;
+        }
+
+        .stem_dropdown:hover .stem_content,
+        .creative_dropdown:hover .creative_content,
+        .media_dropdown:hover .media_content{
+            display: block;
+        }
+
+        .stem_content a,
+        .creative_content a,
+        .media_content a {
+           color: rgb(211, 88, 154);
+           padding: 12px 16px;
+           text-decoration: none;
+           display: block;
+        }
+
+        .stem_content a:hover,
+        .creative_content a:hover,
+        .media_content a:hover {
+            background-color:rgb(255, 240, 252);
+            border-radius: 20px;
+        }
+
         
     </style>
+</head>
 <body>
     <div class = everything>
         <img class = top src = "images/top.jpg">
@@ -203,17 +279,48 @@
                 <a href = "creative.html"><img src = "images/bear.png" id = bear></a>
                 <a href = "media.html"><img src = "images/shoes.png" id = shoes></a>
             </div>
-            <div class = button-text>
-                <p>stem</p>
-                <p class = creative>creative</p>
-                <p class = media>media</p>
+
+            <div class = dropdown_buttons>
+                <div class = stem_text>
+                    <div class = "stem_dropdown">
+                        <button class = "stem_button">stem</button>
+                        <div class = stem_content>
+                            <a href = "science.html">science</a>
+                            <a href = "tech.html">tech</a>
+                            <a href = "engineering.html">engineering</a>
+                            <a href = "math.html">math</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = creative_text>
+                    <div class = "creative_dropdown">
+                        <button class = "creative_button">creative</button>
+                        <div class = creative_content>
+                            <a href = "art.html">art</a>
+                            <a href = "writing.html">writing</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = media_text>
+                    <div class = "media_dropdown">
+                        <button class = "media_button">media</button>
+                        <div class = media_content>
+                            <a href = "books.html">books</a>
+                            <a href = "shows.html">shows</a>
+                            <a href = "roblox.html">roblox</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
          <img class = bottom src = "images/top.jpg">
          
          <script>
-            documentGetElementById('rikkuma').removeAttribute('href');
-            documentGetElementById('silly').removeAttribute('href');
+            document.GetElementById('rikkuma').removeAttribute('href');
+            document.GetElementById('silly').removeAttribute('href');
          </script>
     </div>
 </body>
