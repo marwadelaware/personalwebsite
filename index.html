@@ -48,6 +48,7 @@
             border-image-repeat: round round;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             overflow: visible;
+            translate: 0px 290px;
             
         }
 
@@ -121,40 +122,19 @@
         #rikkuma.a {
             cursor: default;
         }
-        #categorized {
-            translate: 75px -52px
-        }
 
-        #categorized1 {
-            translate: 0px -84px
+        #keychain,
+        #bear,
+        #shoes {
+            width: auto;
+            height: auto;
+            max-height: 150px;
         }
-
-        #silly {
-            translate: 143px -122px
-        }
-
-        #silly.a {
-            cursor: default;
-        }
-        .buttons {
+        .imgs {
             display: flex;
             justify-content: center;
-            translate: -150px 50px
-        }
-        #keychain {
-            width: 200px;
-            height: auto;
-        }
-
-        #shoes {
-            width: 175px;
-            height: auto;
-        }
-
-        #bear {
-            width: 170px;
-            height: auto;
-            margin-left: -10px
+            gap: 20px;
+            align-items: center;
         }
 
         .button-text {
@@ -229,6 +209,13 @@
             padding: 5px 0;
             text-align: center;
             border-radius: 25px;
+            font-family: "Sour Gummy", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+            font-size: 16px;
         }
 
         .stem_dropdown:hover .stem_content,
@@ -253,6 +240,7 @@
             border-radius: 20px;
         }
 
+
         
     </style>
 </head>
@@ -262,24 +250,17 @@
         <h1 class = title>welcome to my website ^_^</h1>
         <img class = border src = "images/border.jpg">
         <div class = intro>
-            <img class = "pfp" src = "images/pink_profile.jpg">
+            <img class = "pfp" src = "images/pink_profile.jpg" alt = "pink manga drawing of a girl with straight hair drinking out of an iced drink using a straw! i use this as my profile pic hehe">
             <div id = "intro-text">
-                <p class = "hello">i'm marwa, and i have like... so many interests. like so many.</p>
-                <div class = align1>
-                    <a href = ""><img src ="https://64.media.tumblr.com/2bd8693f6674922c7c6ad6dd7a6b6754/ddfd9fed5121627a-ad/s75x75_c1/f4ab9c75f5f1b9ecf233654d4a44d029bff225ee.gifv" id = "rikkuma"></a>
-                    <p class = "hello" id = categorized> they're typically categorized in three</p>
-                </div>
-                <div>
-                    <p class = "hello" id = categorized1> groups: stem, creative, and media. explore the buttons for more !!</p>
-                    <a href = ""><img src ="https://pix.crd.co/assets/images/gallery18/695a56a7_original.gif?v=5184cfc4" id = "silly"></a>
+                <p class = "hello">i'm marwa, and i have like... so many interests. like so many. <span><img src = "https://i.ibb.co/JRxXzsyT/f4ab9c75f5f1b9ecf233654d4a44d029bff225ee.gif" alt=""></span>
+                <p class = "hello"> they're typically categorized in three groups: stem, creative, and media. explore the buttons for more !!<span><img src="https://i.ibb.co/HLQGfxKh/695a56a7-original.gif" alt = ""></span></p>
                 </div>
             </div>
-            <div class = buttons>
-                <a href = "stem.html"><img src = "images/keychain.png" id = keychain></a>
-                <a href = "creative.html"><img src = "images/bear.png" id = bear></a>
-                <a href = "media.html"><img src = "images/shoes.png" id = shoes></a>
+            <div class = imgs>
+                <img id = keychain src = "images/keychain.png">
+                <img id = bear src = "images/bear.png">
+                <img id = shoes src = "images/shoes.png">
             </div>
-
             <div class = dropdown_buttons>
                 <div class = stem_text>
                     <div class = "stem_dropdown">
@@ -314,14 +295,8 @@
                     </div>
                 </div>
             </div>
-
-        </div>
          <img class = bottom src = "images/top.jpg">
-         
-         <script>
-            document.GetElementById('rikkuma').removeAttribute('href');
-            document.GetElementById('silly').removeAttribute('href');
-         </script>
+        </div>
     </div>
 </body>
 </html>
